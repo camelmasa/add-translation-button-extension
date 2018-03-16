@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Translate GitHub issue/pull page",
+  "description": "This extension adds one click translation button on GitHub issue/pull page",
+  "version": "0.0.1",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["dist/index.js"]
+    }
+  ]
+}
