@@ -1,0 +1,1 @@
+# translate-github-issue-extension
