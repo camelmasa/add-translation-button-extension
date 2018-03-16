@@ -1,0 +1,27 @@
+div.translate-github-extension.button {
+  color: #657786;
+  cursor: pointer;
+  font-size: 12px;
+  margin: 6px -2px -2px 0;
+  text-align: left;
+}
+
+div.translate-github-extension.button svg {
+  width: 12px;
+  height: 12px;
+  margin: 0 4px 1px 0;
+}
+
+div.translate-github-extension.loader {
+  text-align: center;
+}
+
+div.translate-github-extension.loader img {
+  width: 24px;
+}
+
+div.translate-github-extension.result {
+  border-top: 1px solid #e6ecf0;
+  margin-top: 5px;
+  padding: 5px 0 5px 0;
+}
