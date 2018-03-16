@@ -1,7 +1,7 @@
 {
   "name": "translate-github-issue-extension",
   "version": "0.0.1",
-  "description": "This extension adds one click translation button on GitHub issue/pull texts",
+  "description": "This extension adds one click translation button on GitHub issue/pull page",
   "main": "./index.js",
   "scripts": {
     "watch": "webpack --progress --colors --watch"
