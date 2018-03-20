@@ -20,31 +20,23 @@ const addTranslateButton = (dom) => {
   buttonArea.appendChild(button)
 
   button.addEventListener('click', () => {
-    dom.removeChild(buttonArea)
+    buttonArea.classList.remove("button")
+    buttonArea.classList.add("loading")
 
-    let resultArea = document.createElement('div')
-    resultArea.setAttribute('class', 'add-translation-button-extension result')
-
-    let loaderArea = document.createElement('div')
-    loaderArea.setAttribute('class', 'add-translation-button-extension loader')
-    loaderArea.innerHTML = spinnerIcon
-
-    dom.appendChild(loaderArea)
+    buttonArea.innerHTML = spinnerIcon
 
     http.get('https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ja&dt=t&dt=bd&dj=1&source=icon&q=' + encodeURIComponent(text))
       .then((response) => {
         const transTexts = response.data.sentences.map((sentence) => { return sentence.trans })
 
-        resultArea.innerText = transTexts.join('')
-
-        dom.removeChild(loaderArea)
-        dom.appendChild(resultArea)
+        buttonArea.innerText = transTexts.join('')
+        buttonArea.classList.remove("loading")
+        buttonArea.classList.add("result")
       })
       .catch((error) => {
-        resultArea.innerText = '翻訳に失敗しました'
-
-        dom.removeChild(loaderArea)
-        dom.appendChild(resultArea)
+        buttonArea.innerText = '翻訳に失敗しました'
+        buttonArea.classList.remove("loading")
+        buttonArea.classList.add("result")
       })
   })
 

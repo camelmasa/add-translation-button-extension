@@ -1,9 +1,12 @@
 div.add-translation-button-extension.button {
   color: #657786;
-  cursor: pointer;
   font-size: 12px;
   margin: 6px -2px -2px 0;
   text-align: left;
+}
+
+div.add-translation-button-extension.button span {
+  cursor: pointer;
 }
 
 div.add-translation-button-extension.button svg {
@@ -16,7 +19,7 @@ div.add-translation-button-extension.button svg {
   fill: currentColor;
 }
 
-div.add-translation-button-extension.loader {
+div.add-translation-button-extension.loading {
   text-align: center;
 }
 
