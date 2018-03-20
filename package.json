@@ -1,7 +1,7 @@
 {
   "name": "add-translation-button-extension",
   "version": "0.0.1",
-  "description": "This extension adds one click translation button on GitHub issue/pull page",
+  "description": "This extension adds one click translation button on GitHub, Hacker News, Stack Overflow and Reddit",
   "main": "./index.js",
   "scripts": {
     "watch": "webpack --progress --colors --watch"
@@ -10,7 +10,10 @@
   "keywords": [
     "Chrome Extension",
     "Translation",
-    "GitHub"
+    "GitHub",
+    "Hacker News",
+    "Stack Overflow",
+    "Reddit"
   ],
   "author": "Masahiro Saito",
   "license": "MIT",
