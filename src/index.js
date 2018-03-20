@@ -66,4 +66,10 @@ switch (true) {
     document.querySelectorAll('.post-text, .comment-body').forEach((dom) => { addTranslateButton(dom) })
 
     break
+
+  // Reddit
+  case /^https:\/\/www.reddit.com\/r\//.test(location.href):
+    document.querySelectorAll('.usertext-body').forEach((dom) => { addTranslateButton(dom) })
+
+    break
 }
