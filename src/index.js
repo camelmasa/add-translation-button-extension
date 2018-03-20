@@ -51,9 +51,21 @@ const addTranslateButton = (dom) => {
   dom.appendChild(buttonArea)
 }
 
-document.addEventListener('pjax:success', () => {
-  document.querySelectorAll('.comment-body').forEach((dom) => { addTranslateButton(dom) })
-})
+switch (true) {
+  // GitHub
+  case /^https:\/\/github.com/.test(location.href):
+    document.addEventListener('pjax:success', () => {
+      document.querySelectorAll('.comment-body').forEach((dom) => { addTranslateButton(dom) })
+    })
 
-// Dispach event when first load
-document.querySelectorAll('.comment-body').forEach((dom) => { addTranslateButton(dom) })
+    // Dispach event when first load
+    document.querySelectorAll('.comment-body').forEach((dom) => { addTranslateButton(dom) })
+
+    break
+
+  // Hacker News
+  case /^https:\/\/news.ycombinator.com\/item/.test(location.href):
+    document.querySelectorAll('.comment').forEach((dom) => { addTranslateButton(dom) })
+
+    break
+}

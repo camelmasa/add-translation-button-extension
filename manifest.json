@@ -5,7 +5,10 @@
   "version": "0.0.1",
   "content_scripts": [
     {
-      "matches": ["https://github.com/*"],
+      "matches": [
+        "https://github.com/*",
+        "https://news.ycombinator.com/item*"
+      ],
       "js": ["dist/index.js"]
     }
   ]
