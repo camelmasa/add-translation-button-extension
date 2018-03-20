@@ -13,6 +13,17 @@ https://github.com/camelmasa/add-translation-button-extension/releases
 
 And, setup in your chrome browser.
 
+If you are worry about malware, you can build extension by yourself.
+
+```bash
+git clone git@github.com:camelmasa/add-translation-button-extension.git
+
+cd add-translation-button-extension
+
+yarn
+
+yarn release
+```
 
 ## Note
 
