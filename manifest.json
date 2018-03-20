@@ -7,7 +7,8 @@
     {
       "matches": [
         "https://github.com/*",
-        "https://news.ycombinator.com/item*"
+        "https://news.ycombinator.com/item*",
+        "https://stackoverflow.com/questions/*"
       ],
       "js": ["dist/index.js"]
     }

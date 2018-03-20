@@ -60,4 +60,11 @@ switch (true) {
     document.querySelectorAll('.comment').forEach((dom) => { addTranslateButton(dom) })
 
     break
+
+  // Stack Overflow
+  case /^https:\/\/stackoverflow.com\/questions/.test(location.href):
+    document.querySelectorAll('.post-text').forEach((dom) => { addTranslateButton(dom) })
+    document.querySelectorAll('.comment-body').forEach((dom) => { addTranslateButton(dom) })
+
+    break
 }
