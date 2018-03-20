@@ -16,7 +16,7 @@ const addTranslateButton = (dom) => {
   buttonArea.innerHTML = globeIcon
   buttonArea.appendChild(button)
 
-  button.addEventListener('click', () => {
+  buttonArea.addEventListener('click', () => {
     dom.removeChild(buttonArea)
 
     let resultArea = document.createElement('div')
