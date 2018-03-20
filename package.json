@@ -1,12 +1,12 @@
 {
-  "name": "translate-github-issue-extension",
+  "name": "add-translation-button-extension",
   "version": "0.0.1",
   "description": "This extension adds one click translation button on GitHub issue/pull page",
   "main": "./index.js",
   "scripts": {
     "watch": "webpack --progress --colors --watch"
   },
-  "repository": "https://github.com/camelmasa/translate-github-extension",
+  "repository": "https://github.com/camelmasa/add-translation-button-extension",
   "keywords": [
     "Chrome Extension",
     "Translation",

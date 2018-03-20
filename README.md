@@ -1,4 +1,4 @@
-# translate-github-issue-extension
+# add-translation-button-extension
 
 This extension adds one click translation button on GitHub issue/pull page.
 
