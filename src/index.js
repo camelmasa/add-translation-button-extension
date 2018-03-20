@@ -11,7 +11,7 @@ const addTranslateButton = (dom) => {
   const text = dom.innerText
 
   let buttonArea = document.createElement('div')
-  buttonArea.setAttribute('class', 'add-translation-button-extension button')
+  buttonArea.setAttribute('class', 'add-translation-button-extension atb-button')
 
   let button = document.createElement('span')
   button.innerText = '英語から翻訳'
@@ -20,8 +20,8 @@ const addTranslateButton = (dom) => {
   buttonArea.appendChild(button)
 
   button.addEventListener('click', () => {
-    buttonArea.classList.remove("button")
-    buttonArea.classList.add("loading")
+    buttonArea.classList.remove("atb-button")
+    buttonArea.classList.add("atb-loading")
 
     buttonArea.innerHTML = spinnerIcon
 
@@ -30,13 +30,13 @@ const addTranslateButton = (dom) => {
         const transTexts = response.data.sentences.map((sentence) => { return sentence.trans })
 
         buttonArea.innerText = transTexts.join('')
-        buttonArea.classList.remove("loading")
-        buttonArea.classList.add("result")
+        buttonArea.classList.remove("atb-loading")
+        buttonArea.classList.add("atb-result")
       })
       .catch((error) => {
         buttonArea.innerText = '翻訳に失敗しました'
-        buttonArea.classList.remove("loading")
-        buttonArea.classList.add("result")
+        buttonArea.classList.remove("atb-loading")
+        buttonArea.classList.add("atb-result")
       })
   })
 
