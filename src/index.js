@@ -57,14 +57,13 @@ switch (true) {
 
   // Hacker News
   case /^https:\/\/news.ycombinator.com\/item/.test(location.href):
-    document.querySelectorAll('.comment').forEach((dom) => { addTranslateButton(dom) })
+    document.querySelectorAll('.comment, .fatitem tr:last-child td:last-child').forEach((dom) => { addTranslateButton(dom) })
 
     break
 
   // Stack Overflow
   case /^https:\/\/stackoverflow.com\/questions/.test(location.href):
-    document.querySelectorAll('.post-text').forEach((dom) => { addTranslateButton(dom) })
-    document.querySelectorAll('.comment-body').forEach((dom) => { addTranslateButton(dom) })
+    document.querySelectorAll('.post-text, .comment-body').forEach((dom) => { addTranslateButton(dom) })
 
     break
 }
