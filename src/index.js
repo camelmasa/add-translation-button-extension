@@ -8,7 +8,7 @@ const addTranslateButton = (dom) => {
   const text = dom.innerText
 
   let buttonArea = document.createElement('div')
-  buttonArea.setAttribute('class', 'translate-github-extension button')
+  buttonArea.setAttribute('class', 'add-translation-button-extension button')
 
   let button = document.createElement('span')
   button.innerText = '英語から翻訳'
@@ -20,10 +20,10 @@ const addTranslateButton = (dom) => {
     dom.removeChild(buttonArea)
 
     let resultArea = document.createElement('div')
-    resultArea.setAttribute('class', 'translate-github-extension result')
+    resultArea.setAttribute('class', 'add-translation-button-extension result')
 
     let loaderArea = document.createElement('div')
-    loaderArea.setAttribute('class', 'translate-github-extension loader')
+    loaderArea.setAttribute('class', 'add-translation-button-extension loader')
 
     let loader = document.createElement('img')
     loader.setAttribute('src', loaderUrl)
