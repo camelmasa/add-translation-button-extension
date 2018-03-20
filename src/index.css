@@ -10,6 +10,10 @@ div.add-translation-button-extension.button svg {
   width: 12px;
   height: 12px;
   margin: 0 4px 1px 0;
+  vertical-align: text-bottom;
+  display: inline-block;
+  vertical-align: text-top;
+  fill: currentColor;
 }
 
 div.add-translation-button-extension.loader {
