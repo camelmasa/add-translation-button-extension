@@ -1,15 +1,15 @@
-div.add-translation-button-extension.button {
+div.add-translation-button-extension.atb-button {
   color: #657786;
   font-size: 12px;
   margin: 6px -2px -2px 0;
   text-align: left;
 }
 
-div.add-translation-button-extension.button span {
+div.add-translation-button-extension.atb-button span {
   cursor: pointer;
 }
 
-div.add-translation-button-extension.button svg {
+div.add-translation-button-extension.atb-button svg {
   width: 12px;
   height: 12px;
   margin: 0 4px 1px 0;
@@ -19,11 +19,11 @@ div.add-translation-button-extension.button svg {
   fill: currentColor;
 }
 
-div.add-translation-button-extension.loading {
+div.add-translation-button-extension.atb-loading {
   text-align: center;
 }
 
-div.add-translation-button-extension.result {
+div.add-translation-button-extension.atb-result {
   border-top: 1px solid #e6ecf0;
   margin-top: 5px;
   padding: 5px 0 5px 0;
