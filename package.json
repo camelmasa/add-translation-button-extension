@@ -4,7 +4,8 @@
   "description": "This extension adds one click translation button on GitHub, Hacker News, Stack Overflow and Reddit",
   "main": "./index.js",
   "scripts": {
-    "watch": "webpack --progress --colors --watch"
+    "watch": "webpack --progress --colors --watch",
+    "release": "webpack; mkdir ./add-translation-button-extension; cp -r ./dist ./add-translation-button-extension/; cp ./manifest.json ./add-translation-button-extension/; zip -r ./add-translation-button-extension.zip ./add-translation-button-extension; rm -rf ./add-translation-button-extension"
   },
   "repository": "https://github.com/camelmasa/add-translation-button-extension",
   "keywords": [
